@@ -25,7 +25,7 @@ class Scraper
   end
 
   def get_courses
-    self.get_page.css('#course_grid.block')
+    self.get_page.css('.posts-holder')
     binding.pry
   end
 
