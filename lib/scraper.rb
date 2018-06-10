@@ -35,7 +35,6 @@ class Scraper
       ob.title = course.css("h2").text
       ob.schedule = course.css("em.date").text
       ob.description = course.css("p").text
-        binding.pry
     end
 
   end
