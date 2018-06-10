@@ -26,12 +26,15 @@ class Scraper
 
   def get_courses
     self.get_page.css('.posts-holder')
-  #  binding.pry
   end
 
   def make_courses
-    course = Course.new()
-  #  binding.pry
-  #  course.title = self.get_courses.
+    ob = Course.new()
+    self.get_courses.each do
+      |course| = ob.title = course.css("h2").text
+    end
+    
+    ob = Course.new()
+  
   end
 end
