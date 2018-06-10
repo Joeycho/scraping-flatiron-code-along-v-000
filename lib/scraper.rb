@@ -22,9 +22,11 @@ class Scraper
   end
 
   def get_courses
-    self.get_page.css(.block)
+  #  self.get_page.css(.block)
   end
 
   def make_courses
+    course = Course.new()
+  #  course.title = self.get_courses.
   end
 end
