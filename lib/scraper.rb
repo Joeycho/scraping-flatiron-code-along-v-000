@@ -30,7 +30,7 @@ class Scraper
 
   def make_courses
     course = Course.new()
-    binding.pry
+  #  binding.pry
   #  course.title = self.get_courses.
   end
 end
